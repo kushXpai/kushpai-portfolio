@@ -8,14 +8,41 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <div className="flex flex-wrap">
+        <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+          <h3 className="font-bold">Languages</h3>
+          <ul className="list-disc pl-2">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Swift</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>FLTK</li>
+          </ul>
+        </div>
+        <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+          <h3 className="font-bold">Technologies</h3>
+          <ul className="list-disc pl-2">
+            <li>Node</li>
+            <li>Django</li>
+            <li>GraphQL</li>
+            <li>Flutter</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+            <li>Firebase</li>
+            <li>Power BI</li>
+          </ul>
+        </div>
+        <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+          <h3 className="font-bold">Cloud Technologies</h3>
+          <ul className="list-disc pl-2">
+            <li>Google Cloud Platform</li>
+            <li>Compute Engine</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+      </div>
     ),
   },
   {
@@ -23,18 +50,21 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Bachelor of Science in Computer Science :  Mithibai College, Mumbai University - 8.36 CGPA</li>
+        <li>Intermediate : State Board, Maharashtra - 93.17%</li>
+        <li>Matriculation : State Board, Maharashtra - 90.20%</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Extracirricular Achievements",
+    id: "Extracirricular Achievements",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Head of Finance and Corporate Relations, Mithibai Techspark 2024</li>
+        <li>Website Developer, TEDxMithibaiCollege 2023</li>
+        <li>National Level Weightlifter, 2 time Maharashtra State Champion</li>
+        <li>Captain of School Baseball team: 5 concecutive years Baseball Divisions Champion</li>
       </ul>
     ),
   },
@@ -57,12 +87,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I am a dedicated software developer with a comprehensive skill set in Python, JavaScript, Java, Swift, and C. My technical expertise extends to Power BI, GraphQL, Node, Kubernetes, Docker, Firebase, Django, and Flutter, complemented by hands-on experience with Google Cloud Platform (GCP) services such as Storage, Compute Engine, and Firebase. I possess strong critical thinking and problem-solving abilities, with a keen aptitude for active listening and effective teamwork. I am committed to leveraging my skills to develop innovative software solutions and contribute to impactful projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -80,11 +105,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("Extracirricular Achievements")}
+              active={tab === "Extracirricular Achievements"}
             >
               {" "}
-              Certifications{" "}
+              Extracirricular Achievements{" "}
             </TabButton>
           </div>
           <div className="mt-8">

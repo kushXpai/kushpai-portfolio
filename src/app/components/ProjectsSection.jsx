@@ -6,56 +6,65 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    id: 7,
+    title: "Portfolio Website",
+    description: "Responsive portfolio website developed using React, Tailwind CSS, and JavaScript. It showcases my personal projects and highlights software development skills.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/kushXpai/Portfolio",
     previewUrl: "/",
   },
   {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    id: 6,
+    title: "KP FAST",
+    description: "This is a cross-platform fitness app developed with Flutter and Firebase. It provides real-time data access, and user-friendly interfaces, achieving a 55% increase in user engagement.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://apps.apple.com/in/app/kp-fast/id6505094329",
   },
   {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    id: 5,
+    title: "GTA Crimson Streets",
+    description: "This is an immersive 3D open-world game developed with Unity and C#. It blends intricate missions and diverse gameplay, showcasing expertise in game development and storytelling.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Game Development"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Chef's Hat",
+    description: "This is a recipe generator app developed with Flutter, Django, and GraphQL. It features ingredient-based suggestions, integrated payment, enhances community engagement etc.",
+    image: "/images/projects/6.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    id: 3,
+    title: "Sudoku Solver",
+    description: "This is an advanced Sudoku solver using backtracking algorithms. It significantly reduces problem-solving time, improving algorithm efficiency and performance.",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All"],
+    gitUrl: "https://github.com/kushXpai/sudoku-solver",
     previewUrl: "/",
   },
   {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    id: 2,
+    title: "TinyURLer",
+    description: "This is a URL shortening service developed with React and MongoDB. It optimizes user operations by streamlining URL management and enhancing efficiency.",
+    image: "/images/projects/4.png",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/kushXpai/url-shortener-software",
+    previewUrl: "/",
+  },
+  {
+    id: 1,
+    title: "Finchat",
+    description: "This is a financial chatbot developed using Flask and Pandas. It enables seamless Natural Language Processing and financial data analysis, enhancing query handling.",
+    image: "/images/projects/6.png",
+    tag: ["All"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -99,6 +108,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Game Development"
+          isSelected={tag === "Game Development"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
