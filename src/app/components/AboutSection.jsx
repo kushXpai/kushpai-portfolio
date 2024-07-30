@@ -14,6 +14,8 @@ const TAB_DATA = [
           <ul className="list-disc pl-2">
             <li>Python</li>
             <li>JavaScript</li>
+            <li>SQL</li>
+            <li>PLSQL</li>
             <li>Java</li>
             <li>Swift</li>
             <li>C++</li>
@@ -81,7 +83,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white pt-24" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">

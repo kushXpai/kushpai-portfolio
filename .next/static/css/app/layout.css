@@ -640,10 +640,6 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -800,9 +796,6 @@ video {
 }
 .gap-2 {
   gap: 0.5rem;
-}
-.gap-4 {
-  gap: 1rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -984,10 +977,6 @@ video {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1012,6 +1001,9 @@ video {
 }
 .pr-4 {
   padding-right: 1rem;
+}
+.pt-24 {
+  padding-top: 6rem;
 }
 .text-left {
   text-align: left;
@@ -1222,11 +1214,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
-  .md\:my-12 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
 
   .md\:mb-12 {
     margin-bottom: 3rem;
