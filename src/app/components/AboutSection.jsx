@@ -37,6 +37,18 @@ const TAB_DATA = [
           </ul>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+          <h3 className="font-bold">Network & Security</h3>
+          <ul className="list-disc pl-2">
+            <li>Wireshark</li>
+            <li>Metasploit</li>
+            <li>NMap</li>
+            <li>IDS/IPS</li>
+            <li>TCP/IP</li>
+            <li>DNS</li>
+            <li>VLANs</li>
+          </ul>
+        </div>
+        <div className="w-full md:w-1/2 lg:w-1/3 p-2">
           <h3 className="font-bold">Cloud Technologies</h3>
           <ul className="list-disc pl-2">
             <li>Google Cloud Platform</li>
@@ -84,12 +96,14 @@ const AboutSection = () => {
 
   return (
     <section className="text-white pt-24" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a dedicated software developer with a comprehensive skill set in Python, JavaScript, Java, Swift, and C. My technical expertise extends to Power BI, GraphQL, Node, Kubernetes, Docker, Firebase, Django, and Flutter, complemented by hands-on experience with Google Cloud Platform (GCP) services such as Storage, Compute Engine, and Firebase. I possess strong critical thinking and problem-solving abilities, with a keen aptitude for active listening and effective teamwork. I am committed to leveraging my skills to develop innovative software solutions and contribute to impactful projects.
+            {/* I am a dedicated software developer with a comprehensive skill set in Python, JavaScript, Java, Swift, and C. My technical expertise extends to Power BI, GraphQL, Node, Kubernetes, Docker, Firebase, Django, and Flutter, complemented by hands-on experience with Google Cloud Platform (GCP) services such as Storage, Compute Engine, and Firebase. I possess strong critical thinking and problem-solving abilities, with a keen aptitude for active listening and effective teamwork. I am committed to leveraging my skills to develop innovative software solutions and contribute to impactful projects. */}
+
+            I am an experienced software developer proficient in a wide range of programming languages, including Python, JavaScript, Java, Swift, and C. My technical skills also encompass Power BI, GraphQL, Node, Kubernetes, Docker, Django, and Flutter. Furthermore, I have hands-on experience with various Google Cloud Platform (GCP) services, such as Storage, Compute Engine, and Firebase. I also have a solid understanding of network security and networking concepts, including Wireshark, Metasploit, Nmap, Intrusion Detection and Prevention Systems (IDS/IPS), TCP/IP, DNS, and VLANs. My strengths lie in critical thinking, problem-solving, active listening, and effective teamwork. I am dedicated to utilizing my skills to create innovative software solutions and contribute to meaningful projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

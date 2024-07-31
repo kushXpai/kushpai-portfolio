@@ -34,7 +34,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Graduate with a strong aptitude for learning and a passion for acquiring new skills, seeking a full-time role to expand my knowledge base and contribute to innovative projects.
+            Graduate with a strong aptitude for learning and a passion for acquiring new skills, seeking a full-time role to expand my knowledge base and contribute to innovative and impactful projects.
           </p>
           <div>
             <Link

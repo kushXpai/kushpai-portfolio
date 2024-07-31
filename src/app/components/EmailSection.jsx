@@ -70,7 +70,7 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I am eager to further develop my skills, make meaningful contributions, and broaden my horizons. I am actively seeking new opportunities that challenge me and allow me to grow professionally.
+          I am excited about advancing my skills, making impactful contributions, and expanding my professional horizons. I am actively searching for new opportunities that will push me to grow and develop further.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/kushXpai">
