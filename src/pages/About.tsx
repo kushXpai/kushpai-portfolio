@@ -232,9 +232,9 @@ const About = () => {
                   <p>
                     Over the years, I&apos;ve had the chance to lead and contribute 
                     to a wide range of projects — from fitness tracking apps and 
-                    clinic management systems to collaborative editing platforms. 
-                    I love working at the intersection of technology and human 
-                    experience, and I aim to create products that are not only 
+                    administration management systems to collaborative editing 
+                    platforms. I love working at the intersection of technology and 
+                    human experience, and I aim to create products that are not only 
                     functional but intuitive and meaningful.
                   </p>
                   <p>
