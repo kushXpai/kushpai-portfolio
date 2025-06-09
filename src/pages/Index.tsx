@@ -217,16 +217,12 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="text-zinc-300">
                   <p className="mb-4">
-                    Recent Computer Science graduate with a strong foundation in
-                    software development and a passion for creating
-                    user-centered digital experiences. I love working at the
-                    intersection of technology and design.
+                    Hi! I&apos;m Kush, a driven software developer pursuing my Master&apos;s in Computer Applications at VJTI, Mumbai. My passion for building impactful digital solutions started during my undergrad at Mithibai College, where I explored everything from web apps to cross-platform mobile development.
                   </p>
                   <p>
-                    When I'm not coding, you can find me exploring new
-                    technologies, contributing to open-source projects, or
-                    diving into the latest developments in web3 and AI.
+                    I&apos;ve contributed to a variety of projects—from fitness tracking apps to collaborative platforms—and love creating products that are both functional and intuitive. Outside of coding, I&apos;m a national-level weightlifter and a five-time baseball division champion, always eager to learn and grow.
                   </p>
+
                 </CardContent>
               </Card>
 
@@ -240,12 +236,12 @@ const Index = () => {
                 <CardContent className="text-zinc-300">
                   <div className="space-y-2">
                     <h4 className="font-semibold">
-                      Bachelor of Science in Computer Science
+                      Masters of Computer Application
                     </h4>
                     <p className="text-zinc-400">
-                      University of Technology • 2020-2024
+                      VJTI, Mumbai • 2024-2024
                     </p>
-                    <p className="text-sm">GPA: 3.8/4.0 • Magna Cum Laude</p>
+                    <p className="text-sm">GPA: 9.23/10</p>
                   </div>
                 </CardContent>
               </Card>
