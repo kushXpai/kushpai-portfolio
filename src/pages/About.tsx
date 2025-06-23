@@ -24,7 +24,7 @@ const About = () => {
       company: "Thapar.Tech",
       period: "June 2025 - August 2025",
       description:
-        "Engineered full-stack systems optimized for Hostinger shared hosting using Laravel, MySQL, and Tailwind CSS. Built dynamic interfaces using HTMX and jQuery. Developed admin panels (Laravel Nova/Voyager), and integrated Instagram and Facebook web scrapers. Designed AI-based microservices for trainer data collection and recommendation systems.",
+        "Engineered Laravel‑based full‑stack platforms optimized for Hostinger with Tailwind, HTMX, and jQuery, while implementing AI‑driven microservices for trainer data scraping and recommendations. Developed automated data pipelines using Python (BeautifulSoup, Requests) and GPT‑4o, extracting actionable JSON profiles from social platforms. Created end‑to‑end ETL workflows with PostgreSQL and MongoDB, reducing manual entry by 90% and delivering a scalable data engineering solution for targeted marketing and analytics.",
       technologies: [ "PHP", "Laravel", "MySQL", "Tailwind CSS", "HTMX", "jQuery", "Laravel Nova", "Web Scraping", "AI Microservices" ],
     },
     {
@@ -38,7 +38,7 @@ const About = () => {
     {
       title: "Freelance Software Developer",
       company: "KP FAST",
-      period: "November 2023 - March 2025",
+      period: "January 2024 - March 2025",
       description:
         "Spearheaded the creation and successful launch of a cross-platform fitness monitoring app and accompanying website using Flutter and Firebase. Enhanced user engagement by 55%, achieving over 50 daily active users through intuitive design, real-time tracking, and seamless synchronization across devices.",
       technologies: [ "Flutter", "Firebase", "Dart", "Google Analytics", "Cross-Platform Development", "UI/UX Design" ],
