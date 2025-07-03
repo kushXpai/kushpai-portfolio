@@ -244,7 +244,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <form
-                    action="https://formspree.io/f/yourFormID"
+                    action="https://formspree.io/f/myzjvnyg"
                     method="POST"
                     className="space-y-6"
                   >
@@ -316,7 +316,7 @@ const Contact = () => {
                     {/* Hidden Formspree config fields */}
                     <input type="hidden" name="_subject" value="New Message from Portfolio Contact Form" />
                     <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+                    <input type="hidden" name="_next" value="https://kushpai-portfolio.vercel.app/" />
 
                     <Button
                       type="submit"
