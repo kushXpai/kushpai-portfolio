@@ -52,9 +52,9 @@ const Index = () => {
     {
       title: "KP FAST",
       description:
-        "Cross-platform fitness app and website using Flutter and C. Improved coach-athlete communication, increased user engagement by 55%, and maintains a stable user base.",
+        "Led the end-to-end development of a cross-platform fitness monitoring app using Flutter and a companion website built with Next.js and TypeScript. Boosted user engagement by 55%, achieving over 50 daily active users. The website improved discoverability and branding with 70+ monthly users. Implemented real-time tracking, coach-athlete communication features, and seamless synchronization across devices.",
       image: "/images/KPFAST.png",
-      technologies: ["Flutter", "C", "Firebase"],
+      technologies: ["Flutter", "Firebase", "Dart", "Next.js", "TypeScript", "Supabase", "Cross-Platform Development", "UI/UX Design"],
       category: "mobile",
       liveUrl: "",
       githubUrl: "",

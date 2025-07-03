@@ -25,7 +25,7 @@ const About = () => {
       period: "June 2025 - August 2025",
       description:
         "Engineered Laravel‑based full‑stack platforms optimized for Hostinger with Tailwind, HTMX, and jQuery, while implementing AI‑driven microservices for trainer data scraping and recommendations. Developed automated data pipelines using Python (BeautifulSoup, Requests) and GPT‑4o, extracting actionable JSON profiles from social platforms. Created end‑to‑end ETL workflows with PostgreSQL and MongoDB, reducing manual entry by 90% and delivering a scalable data engineering solution for targeted marketing and analytics.",
-      technologies: [ "PHP", "Laravel", "MySQL", "Tailwind CSS", "HTMX", "jQuery", "Laravel Nova", "Web Scraping", "AI Microservices" ],
+      technologies: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "HTMX", "jQuery", "Laravel Nova", "Web Scraping", "AI Microservices"],
     },
     {
       title: "Freelance Software Developer",
@@ -33,16 +33,17 @@ const About = () => {
       period: "January 2025 - April 2025",
       description:
         "Led the end-to-end design and development of a dynamic Next.js website, seamlessly integrating Firebase and AWS DynamoDB for robust backend support. Implemented advanced SEO strategies that significantly boosted online visibility and streamlined the student enrollment process through an intuitive, user-friendly interface.",
-      technologies: [ "Next.js", "Firebase", "AWS DynamoDB", "SEO", "JavaScript", "React" ],
+      technologies: ["Next.js", "Firebase", "AWS DynamoDB", "SEO", "JavaScript", "React"],
     },
     {
       title: "Freelance Software Developer",
       company: "KP FAST",
       period: "January 2024 - March 2025",
       description:
-        "Spearheaded the creation and successful launch of a cross-platform fitness monitoring app and accompanying website using Flutter and Firebase. Enhanced user engagement by 55%, achieving over 50 daily active users through intuitive design, real-time tracking, and seamless synchronization across devices.",
-      technologies: [ "Flutter", "Firebase", "Dart", "Google Analytics", "Cross-Platform Development", "UI/UX Design" ],
-    },
+        "Led the end-to-end development of a cross-platform fitness monitoring app using Flutter and a companion website built with Next.js and TypeScript. Boosted user engagement by 55%, achieving over 50 daily active users. The website improved discoverability and branding with 70+ monthly users. Implemented real-time tracking, coach-athlete communication features, and seamless synchronization across devices.",
+      technologies: ["Flutter", "Firebase", "Dart", "Next.js", "TypeScript", "Supabase", "Cross-Platform Development", "UI/UX Design"],
+    }
+
   ];
 
   const education = [
@@ -222,27 +223,27 @@ const About = () => {
                 </CardHeader>
                 <CardContent className="text-zinc-300 space-y-4">
                   <p>
-                    Hi! I&apos;m Kush, a driven and curious software developer 
-                    currently pursuing my Master&apos;s in Computer Applications 
-                    at VJTI, Mumbai. My passion for building impactful digital 
-                    solutions took shape during my undergrad at Mithibai College, 
-                    where I explored everything from web apps to cross-platform 
+                    Hi! I&apos;m Kush, a driven and curious software developer
+                    currently pursuing my Master&apos;s in Computer Applications
+                    at VJTI, Mumbai. My passion for building impactful digital
+                    solutions took shape during my undergrad at Mithibai College,
+                    where I explored everything from web apps to cross-platform
                     mobile development.
                   </p>
                   <p>
-                    Over the years, I&apos;ve had the chance to lead and contribute 
-                    to a wide range of projects — from fitness tracking apps and 
-                    administration management systems to collaborative editing 
-                    platforms. I love working at the intersection of technology and 
-                    human experience, and I aim to create products that are not only 
+                    Over the years, I&apos;ve had the chance to lead and contribute
+                    to a wide range of projects — from fitness tracking apps and
+                    administration management systems to collaborative editing
+                    platforms. I love working at the intersection of technology and
+                    human experience, and I aim to create products that are not only
                     functional but intuitive and meaningful.
                   </p>
                   <p>
-                    Beyond the screen, I&apos;m a national-level weightlifter, 
-                    a five-time baseball division champion, and a firm believer 
-                    in balance and discipline. Whether it&apos;s learning a new 
-                    stack, contributing to open-source, or simply sketching out 
-                    ideas, I&apos;m always seeking growth and inspiration in 
+                    Beyond the screen, I&apos;m a national-level weightlifter,
+                    a five-time baseball division champion, and a firm believer
+                    in balance and discipline. Whether it&apos;s learning a new
+                    stack, contributing to open-source, or simply sketching out
+                    ideas, I&apos;m always seeking growth and inspiration in
                     everything I do.
                   </p>
                 </CardContent>
