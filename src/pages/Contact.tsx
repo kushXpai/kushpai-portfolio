@@ -16,8 +16,42 @@ import {
   Clock,
   MessageCircle,
 } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setIsSubmitting(false);
+    }, 1000);
+  };
 
   const contactMethods = [
     {
@@ -200,83 +234,112 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <form
-              action="https://formspree.io/f/myzjvnyg"
-              method="POST"
-              className="space-y-6"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-zinc-300">
-                    Name
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
-                    placeholder="Your full name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-zinc-300">
-                    Email
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
+            <div className="lg:col-span-2">
+              <Card className="bg-zinc-800/50 border-zinc-700/50">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-white">Send Me a Message</CardTitle>
+                  <p className="text-zinc-400">
+                    I'd love to hear from you! Fill out the form below and I'll get back to you as soon as possible.
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <form
+                    action="https://formspree.io/f/yourFormID"
+                    method="POST"
+                    className="space-y-6"
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="name" className="text-zinc-300">
+                          Name
+                        </Label>
+                        <Input
+                          id="name"
+                          name="name"
+                          type="text"
+                          required
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
+                          placeholder="Your full name"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-zinc-300">
+                          Email
+                        </Label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          required
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
+                          placeholder="your@email.com"
+                        />
+                      </div>
+                    </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="subject" className="text-zinc-300">
-                  Subject
-                </Label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  required
-                  className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
-                  placeholder="What's this about?"
-                />
-              </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="subject" className="text-zinc-300">
+                        Subject
+                      </Label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        required
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400"
+                        placeholder="What's this about?"
+                      />
+                    </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-zinc-300">
-                  Message
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={6}
-                  className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400 resize-none"
-                  placeholder="Tell me about your project, idea, or just say hello!"
-                />
-              </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-zinc-300">
+                        Message
+                      </Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        required
+                        rows={6}
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        className="bg-zinc-700/50 border-zinc-600 text-white placeholder:text-zinc-400 focus:border-cyan-400 resize-none"
+                        placeholder="Tell me about your project, idea, or just say hello!"
+                      />
+                    </div>
 
-              {/* Optional hidden fields */}
-              <input type="hidden" name="_subject" value="New Message from Portfolio" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+                    {/* Hidden Formspree config fields */}
+                    <input type="hidden" name="_subject" value="New Message from Portfolio Contact Form" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
 
-              <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
-              >
-                <div className="flex items-center">
-                  <Send className="h-4 w-4 mr-2" />
-                  Send Message
-                </div>
-              </Button>
-            </form>
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                    >
+                      {isSubmitting ? (
+                        <div className="flex items-center">
+                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                          Sending...
+                        </div>
+                      ) : (
+                        <div className="flex items-center">
+                          <Send className="h-4 w-4 mr-2" />
+                          Send Message
+                        </div>
+                      )}
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+
           </div>
         </div>
       </section>
